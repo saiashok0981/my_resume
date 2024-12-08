@@ -1,0 +1,501 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #004aad;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 5px solid #ffd700;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 3px solid #004aad;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #004aad;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Social Links */
+.social-links {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links ul li a {
+    color: #004aad;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links ul li a:hover {
+    color: #ffd700;
+}
+
+/* Footer */
+footer {
+    background: #004aad;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer .enquiry-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer .enquiry-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+footer .enquiry-form input,
+footer .enquiry-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer .enquiry-form button {
+    display: inline-block;
+    background: #ffd700;
+    color: #004aad;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer .enquiry-form button:hover {
+    background: #e0c100;
+}
+/* Profile Banner Section */
+.profile-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.profile-banner-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.profile-banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-banner p {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+/* Skill Progress Bar Section */
+.skill-progress {
+    margin-bottom: 15px;
+}
+
+.skill-progress label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f4f4f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar::before {
+    content: '';
+    display: block;
+    width: var(--progress);
+    height: 100%;
+    background: linear-gradient(to right, #004aad, #ffd700);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s ease-in-out;
+}
+/* Profile Banner Section */
+.profile-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.profile-banner-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
+.profile-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.profile-info h2 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-info p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Skill Progress Bars */
+.skill-progress {
+    margin-bottom: 20px;
+}
+
+.skill-progress label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 25px;
+    background: linear-gradient(to right, #004aad, #ffd700);
+    border-radius: 5px;
+    transition: width 1.5s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.education-section {
+    margin-bottom: 40px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.education-item p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+.courses-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.courses-section ul li {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+.courses-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.courses-section ul li {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+.projects-section {
+    margin-bottom: 40px;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.project-item p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+/* Profile Banner Section */
+.profile-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.profile-banner-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
+.profile-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.profile-info h2 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-info p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Personal Details Section */
+.personal-details {
+    margin-bottom: 40px;
+}
+
+.personal-details .detail-item {
+    margin-bottom: 20px;
+}
+
+.personal-details label {
+    font-weight: bold;
+}
+
+.personal-details p {
+    font-size: 1.1em;
+}
+
+/* Contact Information Section */
+.contact-information {
+    margin-bottom: 40px;
+}
+
+.contact-information .contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-information label {
+    font-weight: bold;
+}
+
+.contact-information p {
+    font-size: 1.1em;
+}
+
+.contact-information a {
+    color: #004aad;
+    text-decoration: none;
+}
+
+.contact-information a:hover {
+    text-decoration: underline;
+}
+
+/* Hobbies Section */
+.hobbies-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.hobbies-section ul li {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+/* Languages Section */
+.languages-section .language-item {
+    margin-bottom: 20px;
+}
+
+.languages-section label {
+    font-weight: bold;
+}
+
+.languages-section p {
+    font-size: 1.1em;
+}
+
+/* Social Links Section */
+.social-links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social-links ul li {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+.social-links ul li a {
+    color: #004aad;
+    text-decoration: none;
+}
+
+.social-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background-color: #004aad;
+    padding: 20px;
+    text-align: center;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer form input,
+footer form textarea {
+    margin: 10px;
+    padding: 8px;
+    font-size: 1em;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer form button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer form button:hover {
+    background-color: #ffd700;
+}

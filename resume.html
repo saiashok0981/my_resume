@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resume</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Bio-data</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Background Section -->
+    <section class="profile-banner">
+        <img src="banner.png" alt="Profile Background" class="profile-banner-img">
+    </section>
+    
+
+    <main>
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2>Skills</h2>
+            <div class="skill-progress" data-skill="SQL">
+                <label>PostgreSQL</label>
+                <div class="progress-bar" data-progress="75"></div>
+            </div>
+            <div class="skill-progress" data-skill="PostgreSQL">
+                <label>SQL</label>
+                <div class="progress-bar" data-progress="70"></div>
+            </div>
+            <div class="skill-progress" data-skill="pyhton">
+                <label>python</label>
+                <div class="progress-bar" data-progress="60"></div>
+            </div>
+            <div class="skill-progress" data-skill="html">
+                <label>HTML</label>
+                <div class="progress-bar" data-progress="65"></div>
+            </div>
+            <div class="skill-progress" data-skill="CSS">
+                <label>CSS</label>
+                <div class="progress-bar" data-progress="70"></div>
+            </div>
+        </section>
+        <section class="projects-section">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3> Nutrition and health application development</h3>
+                <p> Developed a React Native mobile app with Node.js backend and HTML frontend. Used custom
+                    trained Gemini API for food item recognition and traditional Indian recipe generation, showcasing
+                     successful image classification beyond food items.</p>
+            </div>
+            <!-- <div class="project-item">
+                <h3>Non-Smoking Campaign Website</h3>
+                <p>Designed promotional materials and a website for a non-smoking campaign targeting younger demographics.</p>
+            </div> -->
+    </section>
+    <section class="courses-section">
+        <h2>Courses</h2>
+        <ul>
+            <li><h3>DataCamp</h3>Data Manipulation in SQL, Intermediate SQL, Joining Data in SQL, PostgreSQL Summary Stats
+                and Window Functions </li>
+            
+            <li><h3>Great Learning</h3>Algorithms in c ,Greedy Algorithm , Dynamic programming ,Graph Based Algorithm , Divide
+                and Conquer Algortihm </li>
+            
+            <li><h3>Udemy-</h3>Python</li>
+        </ul>
+    </section>
+    <section class="education-section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>B.E. in Computer Science & Engineering</h3>
+            <h1>Bangalore Institute of Technology</h1>
+            <p>December 2022-present|Bangalore</p>
+        </div>
+        <div class="education-item">
+            <h3>Secondary Education</h3>
+            <h1>Narayana pu college</h1>
+            <p>March 2020-September 2022|Bangalore</p>
+        </div>
+        <div class="education-item">
+            <h3>High School</h3>
+            <h1> The Bishop's School</h1>
+        </div>
+    </section>
+    </main>
+
+    <!-- Social Links -->
+    <section class="social-links">
+        <h2>Connect with Me</h2>
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram | </a></li>
+            <li><a href="https://www.linkedin.com/in/sai-ashok-60b394251/" target="_blank">LinkedIn | </a></li>
+            <li><a href="https://x.com/home?lang=en" target="_blank">X (formerly Twitter)</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer with Enquiry Section -->
+    <footer>
+        <h3>Have Questions? Contact Me</h3>
+        <form action="#" method="POST" class="enquiry-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>&copy; 2024  Saiashok Karadi. All rights reserved.</p>
+    </footer>
+
+    <!-- Smooth Animation for Progress Bars -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+                const progress = bar.dataset.progress;
+                setTimeout(() => {
+                    bar.style.width = `${progress}%`;
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
